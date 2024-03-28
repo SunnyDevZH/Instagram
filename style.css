@@ -1,0 +1,279 @@
+body {
+    margin: 0;
+}
+
+.logo {
+    width: 35%;
+    margin: 20px;
+}
+
+.name {
+    padding-top: 10px;
+    padding-left:8px;
+    color: #474747;
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Rechter Container Follower*/
+
+.right-contanier {
+    display: flex;
+    flex-direction: column;
+    position: sticky; /*Container bleibt an ort und stelle*/
+    top: 0;
+    margin-bottom: 16px;
+    margin-right: 32px;
+    margin-left: 32px;
+    padding-top: 16px;
+    height: 100vh;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+#followers { /* Zugriff auf id Follower*/
+ margin-bottom: 64px;
+}
+
+.follower-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.follower-image {
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    border: 2px solid rgb(85, 85, 85);
+}
+
+.followers-name {
+    margin: 16px;
+    font-size: 14px;
+}
+
+.follower-button {
+    color: blue;
+    font-size: 14px;
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+.footer {
+    max-width: 200px;
+}
+
+/*Linker Container*/
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+    position: sticky; /*Container bleibt an ort und stelle*/
+    top: 0;
+    margin-bottom: 16px;
+    
+    margin-left: 32px;
+    padding-top: 16px;
+    height: 100vh;
+}
+.menu-header {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    max-width: 150px;
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu-icon {
+    width: 25%;
+    padding-right: 16px;
+    padding-bottom: 32px;
+}
+
+.menu-button {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/*Suchfeld*/
+
+.serach-contanier {
+    display: flex;
+    padding-left: 9px;
+    padding-right: 12px;
+}
+
+.search-icon {
+    width: 20%;
+    padding-right: 16px;
+}
+
+#search {
+    width: 60%;
+    border-radius: 3px;
+    border: 1px solid rgb(85, 85, 85);
+}
+
+/*Mittlere Container*/
+
+.postContent {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding-bottom: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    max-width: 1000px;
+}
+
+.User {
+    font-size: 15px;
+}
+
+.new-comment-contanier {
+    padding-bottom: 16px;
+}
+
+.profil-container {
+    display: flex;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-right: 32px;
+}
+
+.profil-image {
+    width: 50px;
+    height: 50px;
+    padding: 2px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    background-image: linear-gradient(90deg, rgb(85, 85, 85) 0%, rgb(208, 208, 208) 56%, rgb(31, 31, 31) 100%);
+}
+
+.post-image {
+    width: 100%;
+}
+
+.post-icon-conatiner {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-top: 16px;
+}
+
+.post-icon-child {
+    padding-top: 5px;
+}
+
+.post-icon {
+    cursor: pointer;
+    width: 22px;
+    padding-right: 8px;
+}
+
+.likes {
+    padding-left: 16px;
+    font-size: 16px;
+}
+
+.description-contanier {
+    padding-left: 8px;
+    font-size: 14px;
+}
+
+.description {
+    display: flex;
+    padding: 16px;
+}
+
+.location {
+    padding-left: 10px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    color: rgb(85, 85, 85);
+}
+
+.author {
+    padding-left: 16px;
+}
+
+.author-name {
+    margin: 0;
+    font-size: 16px;
+}
+
+.new-comment {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid darkgrey;
+    padding-left: 16px;
+}
+
+.show-comments {
+    padding-left: 16px;
+    font-size: 16px;
+}
+
+.comment-field {
+    border: 0;
+    outline: none;
+    padding-top: 16px;
+}
+
+.post-button {
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    color: blue;
+    margin-top: 16px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+/*Responsive*/
+
+@media (max-width:650px) { 
+    .right-contanier {
+        display: none;
+    }
+    .menu-icon {
+        width: 20%;
+        padding-right: 16px;
+        padding-bottom: 28px;
+    }
+    .menu-button {
+        font-size: 12px;
+    }
+    .postContent {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:450px) {
+.left-container{
+    display: none;
+}
+.postContent {
+    margin-left: 20px;
+}
+}
